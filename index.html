@@ -74,12 +74,12 @@
           <label class="selector">Feminino</label>
         </div>
 
-        <button class="btn">Enviar</button>
+        <button class="btn" type="submit" id="submitRegistering">Enviar</button>
       </form>
     </section>
 
     <section class="catalog">
-        <div class="text-divider">Sua seleção especial</div>
+        <div class="catalog-divider">Sua seleção especial</div>
 
         <div class="catalog-grid">
             <div class="catalog-item">
@@ -221,6 +221,30 @@
         </div>
 
         <button class="btn">Ainda mais produtos aqui!</button>
+    </section>
+
+    <section class="newsletter">
+        <div class="newsletter-divider">Compartilhe a novidade</div>
+        <p>Quer que seus amigos também ganhem a lista personalizada deles? Preencha agora!</p>
+
+        <form action="recordData.html" method="get" id="registerNewsletter">
+
+            <div>
+                <label> Nome do seu amigo: </label>
+                <input type="text" name="nome" class="input-text" />
+                <span class="erro"></span>
+              </div>
+      
+              <div>
+                <label>E-mail:</label>
+                <input type="email" name="email" class="input-text" />
+                <span class="erro"></span>
+              </div>
+
+              <button class="btn" type="submit" id="submitNews">Enviar agora</button>
+
+        </form>
+
     </section>
 
     <script src="script.js"></script>

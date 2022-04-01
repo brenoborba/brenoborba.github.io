@@ -17,6 +17,41 @@ body {
   font-family: 'Helvetica Neue', 'Regular';
 }
 
+.text-divider, .catalog .catalog-divider, .newsletter .newsletter-divider {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.text-divider::before, .catalog .catalog-divider::before, .newsletter .newsletter-divider::before,
+.text-divider::after,
+.catalog .catalog-divider::after,
+.newsletter .newsletter-divider::after {
+  content: '';
+  height: 1px;
+  background-color: var(--main-text-color);
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.text-divider::before, .catalog .catalog-divider::before, .newsletter .newsletter-divider::before {
+  margin-right: 20px;
+}
+
+
+.text-divider::after,
+.catalog .catalog-divider::after,
+.newsletter .newsletter-divider::after {
+  margin-left: 20px;
+}
+
 .btn {
   width: 160px;
   height: 40px;
@@ -46,6 +81,8 @@ body {
   text-align: center;
   background-color: var(--main-bg-color);
   color: white;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 65%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 65%);
 }
 
 .header span {
@@ -142,36 +179,6 @@ body {
   margin: 0 291px 0 286px;
 }
 
-.catalog .text-divider {
-  font-size: 18px;
-  font-weight: 400;
-  margin-bottom: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.catalog .text-divider::before,
-.catalog .text-divider::after {
-  content: '';
-  height: 1px;
-  background-color: var(--main-text-color);
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-}
-
-.catalog .text-divider::before {
-  margin-right: 20px;
-}
-
-.catalog .text-divider::after {
-  margin-left: 20px;
-}
-
 .catalog .catalog-grid {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -245,6 +252,33 @@ body {
   height: 40px;
   margin: 0 auto 0 auto;
   display: block;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+/* ----- NEWSLETTER ------ */
+.newsletter {
+  color: var(--main-text-color);
+  margin: 0 390px;
+  padding-top: 138px;
+}
+
+.newsletter p {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 44px;
+}
+
+.newsletter #registerNewsletter {
+  margin-top: 40px;
+  display: inline-block;
+}
+
+.newsletter #registerNewsletter label {
+  font-size: 12px;
+}
+
+.newsletter #registerNewsletter .btn {
   -webkit-box-shadow: none;
           box-shadow: none;
 }

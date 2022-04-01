@@ -16,6 +16,33 @@ body{
     font-family: 'Helvetica Neue', 'Regular';
 }
 
+.text-divider{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+
+}
+
+.text-divider::before,
+.text-divider::after{
+    content: '';
+    height: 1px;
+    background-color: var(--main-text-color);
+    flex-grow: 1;
+}
+
+.text-divider::before {
+    margin-right: 20px;
+  }
+  
+.text-divider::after {
+    margin-left: 20px;
+}
+
+
+
 .btn{
     width: 160px;
     height: 40px;
@@ -43,6 +70,7 @@ body{
     text-align: center;
     background-color: var(--main-bg-color);
     color: white;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 65%);
 
     span{
         display: inline-block;
@@ -127,29 +155,10 @@ body{
     color: var(--main-text-color);
     margin: 0 291px 0 286px;
     
-    .text-divider{
-        font-size: 18px;
-        font-weight: 400;
-        margin-bottom: 50px;
-        display: flex;
-        align-items: center;
+    .catalog-divider{
+        @extend .text-divider
     }
-
-    .text-divider::before,
-    .text-divider::after{
-        content: '';
-        height: 1px;
-        background-color: var(--main-text-color);
-        flex-grow: 1;
-    }
-
-    .text-divider::before {
-        margin-right: 20px;
-      }
-      
-    .text-divider::after {
-        margin-left: 20px;
-    }
+    
 
     .catalog-grid{
         display: flex;
@@ -217,5 +226,37 @@ body{
         margin: 0 auto 0 auto;
         display: block;
         box-shadow: none;
+    }
+}
+
+/* ----- NEWSLETTER ------ */
+
+.newsletter{
+    color: var(--main-text-color);
+    margin: 0 390px;
+    padding-top: 138px;
+
+    .newsletter-divider{
+        @extend .text-divider
+    }
+
+    p{
+        text-align: center;
+        font-size: 14px;
+        margin-top: 44px;
+    }
+
+    #registerNewsletter{
+        margin-top: 40px;
+        display: inline-block;
+
+
+        label{
+            font-size: 12px;
+        }
+
+        .btn{
+            box-shadow: none;
+        }
     }
 }
