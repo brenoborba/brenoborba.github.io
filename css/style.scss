@@ -16,6 +16,9 @@ body{
     font-family: 'Helvetica Neue', 'Regular';
 }
 
+
+/* ----- GLOBAL STYLES ------ */
+
 .text-divider{
     font-size: 18px;
     font-weight: 400;
@@ -233,11 +236,11 @@ body{
 
 .newsletter{
     color: var(--main-text-color);
-    margin: 0 390px;
     padding-top: 138px;
 
     .newsletter-divider{
-        @extend .text-divider
+        @extend .text-divider;
+        padding: 0 290px;
     }
 
     p{
@@ -247,7 +250,7 @@ body{
     }
 
     #registerNewsletter{
-
+        margin: 0 390px 71.76px 390px;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -269,4 +272,25 @@ body{
             margin: 0 auto;
         }
     }
+}
+
+
+/* ----- FOOTER ------ */
+
+.footer{
+    height: 293.24px;
+    width: inherit;
+    background-color: var(--main-bg-color);
+    position: absolute;
+    clip-path: polygon(0% 30%, 100% 0%, 100% 100%, 0% 100%);
+    
+
+    p{
+        text-align: center;
+        font-size: 12px;
+        color: white;
+        margin: 157.24px 620px 86px 620px;
+    }
+
+
 }
