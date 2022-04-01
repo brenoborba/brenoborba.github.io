@@ -14,6 +14,30 @@ body{
     font-family: 'Helvetica Neue', 'Regular';
 }
 
+.btn{
+    width: 160px;
+    height: 40px;
+    font-size: 14px;
+    background-color: white;
+    color: var(--main-text-color);
+    box-shadow: 0px 1px 6px #00000029;
+    border: 1px solid #707070;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.input-text{
+    width: 340px;
+    height: 30px;
+    border: 1px solid var(--border-color); 
+    margin-bottom: 7px;
+}
+
+label{
+    
+}
+/* ----- HEADER ------ */
+
 .header{
     width: 1449.5px;
     height: 399.03px;
@@ -43,16 +67,57 @@ body{
         display: flex;
         justify-content: space-between;
 
+    }
+}
+
+/* ----- ABOUT ------ */
+
+.about{
+    color: var(--main-text-color);
+    padding-top: 20.97px;
+    display: flex;
+    align-content: center;
+
+    article{
+        margin: 0px 60px 95px 290px;
+        text-align: left;
+
+        h2{
+            font-size: 20px;
+            font-weight: 400;
+            margin-bottom: 20px;
+        }
+
+        p{
+            font-size: 12px;
+            line-height: 18px;
+        }
+    }
+
+    #registerUser{
+        margin-right: 290px;
+        height: 290px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        label{
+            margin-bottom: 7px;
+        }
+
+        input{
+            margin-bottom: 20px;
+        }
+
         .btn{
-            width: 160px;
-            height: 40px;
-            font-size: 14px;
-            background-color: white;
-            color: var(--main-text-color);
-            box-shadow: 0px 1px 6px #00000029;
-            border: 1px solid #707070;
-            border-radius: 4px;
-            cursor: pointer;
+            margin-top: 3px;
+            width: 340px;
+            box-shadow: none;
+        }
+
+        .selector{
+            margin-right: 40px;
         }
     }
 }
+

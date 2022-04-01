@@ -15,6 +15,27 @@ body {
   font-family: 'Helvetica Neue', 'Regular';
 }
 
+.btn {
+  width: 160px;
+  height: 40px;
+  font-size: 14px;
+  background-color: white;
+  color: var(--main-text-color);
+  -webkit-box-shadow: 0px 1px 6px #00000029;
+          box-shadow: 0px 1px 6px #00000029;
+  border: 1px solid #707070;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.input-text {
+  width: 340px;
+  height: 30px;
+  border: 1px solid var(--border-color);
+  margin-bottom: 7px;
+}
+
+/* ----- HEADER ------ */
 .header {
   width: 1449.5px;
   height: 399.03px;
@@ -49,16 +70,64 @@ body {
           justify-content: space-between;
 }
 
-.header nav .btn {
-  width: 160px;
-  height: 40px;
-  font-size: 14px;
-  background-color: white;
+/* ----- ABOUT ------ */
+.about {
   color: var(--main-text-color);
-  -webkit-box-shadow: 0px 1px 6px #00000029;
-          box-shadow: 0px 1px 6px #00000029;
-  border: 1px solid #707070;
-  border-radius: 4px;
-  cursor: pointer;
+  padding-top: 20.97px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.about article {
+  margin: 0px 60px 95px 290px;
+  text-align: left;
+}
+
+.about article h2 {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.about article p {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.about #registerUser {
+  margin-right: 290px;
+  height: 290px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.about #registerUser label {
+  margin-bottom: 7px;
+}
+
+.about #registerUser input {
+  margin-bottom: 20px;
+}
+
+.about #registerUser .btn {
+  margin-top: 3px;
+  width: 340px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.about #registerUser .selector {
+  margin-right: 40px;
 }
 /*# sourceMappingURL=style.css.map */

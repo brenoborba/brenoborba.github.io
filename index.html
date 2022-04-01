@@ -1,28 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Linx</title>
 
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
     <header class="header">
-        <span>uma seleção de produtos</span>
-        <h1>especial para você</h1>
-        <p>Todos os produtos desta lista foram selecionados a partir da sua navegação. Aproveite!</p>
-        
-        <nav>
-            <button class="btn">Conheça a Linx</button>
-            <button class="btn">Ajude o algoritmo</button>
-            <button class="btn">Seus produtos</button>
-            <button class="btn">Compartilhe</button>
-        </nav>
-
+      <span>uma seleção de produtos</span>
+      <h1>especial para você</h1>
+      <p>
+        Todos os produtos desta lista foram selecionados a partir da sua
+        navegação. Aproveite!
+      </p>
+      <nav>
+        <button class="btn">Conheça a Linx</button>
+        <button class="btn">Ajude o algoritmo</button>
+        <button class="btn">Seus produtos</button>
+        <button class="btn">Compartilhe</button>
+      </nav>
     </header>
 
+    <section class="about">
+        <article>
+            <h2>Ajude o algoritimo a ser mais certeiro</h2>
+            <br>
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+            ultricies tellus nec mi porta convallis sollicitudin eu urna. Mauris
+            rhoncus erat sed interdum dignissim. Suspendisse semper pretium
+            consectetur. Praesent bibendum arcu risus, sit amet iaculis ex tempus
+            quis. Cras et erat ut tellus vulputate tincidunt. Aenean lacinia
+            euismod augue vel egestas. Class aptent taciti sociosqu ad litora
+            torquent per conubia nostra, per inceptos himenaeos. Vestibulum vel
+            urna tortor. Vivamus et arcu non felis tristique eleifend. 
+            <br><br>
+            Morbi eucondimentum urna. Curabitur eu magna eget turpis condimentum ultrices.
+            Suspendisse quis lorem ultricies, pulvinar purus sed, egestas erat.
+            Etiam ultricies a ante vehicula pharetra. Quisque ut neque mattis,
+            consequat velit ut, ultrices orci. Nulla varius elementum erat vel
+            pharetra. Aenean sit amet nisi diam. Morbi viverra, magna ac luctus
+            commodo, odio ante suscipit libero, at mattis augue est vel metus.
+            </p>
+        </article>
+
+        <form action="recordData.html" method="get" id="registerUser">
+            <div>
+                <label> Seu nome: </label>
+                <input type="text" name="nome" class="input-text">
+                <span class="erro"></span>
+            </div>
+
+            <div>
+                <label>E-mail:</label>
+                <input type="email" name="email" class="input-text">
+                <span class="erro"></span>
+            </div>
+
+            <div>
+                <label>CPF:</label>
+                <input type="text" name="cpf" class="input-text">
+                <span class="erro"></span>
+            </div>
+
+            <div>
+                <input name="sexo" type="radio" value="masculino"> <label class="selector">Masculino</label>
+                <input name="sexo" type="radio" value="feminino"> <label class="selector">Feminino</label>
+            </div>
+
+            <button class="btn">Enviar</button>
+        </form>
+    </section>
+
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
