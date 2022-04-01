@@ -12,6 +12,8 @@
 }
 
 body {
+  width: 1500px;
+  height: 2444px;
   font-family: 'Helvetica Neue', 'Regular';
 }
 
@@ -37,7 +39,9 @@ body {
 
 /* ----- HEADER ------ */
 .header {
-  width: 1449.5px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   height: 399.03px;
   text-align: center;
   background-color: var(--main-bg-color);
@@ -133,10 +137,15 @@ body {
 }
 
 /* ----- CATALOG ------ */
+.catalog {
+  color: var(--main-text-color);
+  margin: 0 291px 0 286px;
+}
+
 .catalog .text-divider {
   font-size: 18px;
   font-weight: 400;
-  color: var(--main-text-color);
+  margin-bottom: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -153,7 +162,6 @@ body {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  margin: 0 290px;
 }
 
 .catalog .text-divider::before {
@@ -162,5 +170,82 @@ body {
 
 .catalog .text-divider::after {
   margin-left: 20px;
+}
+
+.catalog .catalog-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-column-gap: 40px;
+          column-gap: 40px;
+  row-gap: 40px;
+  height: 740px;
+  width: 931px;
+  margin-bottom: 52px;
+}
+
+.catalog .catalog-item {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.catalog .catalog-item .display-item {
+  margin-bottom: 14px;
+  border: 1px solid var(--border-color);
+  width: 200px;
+  height: 150px;
+}
+
+.catalog .catalog-item .display-item img {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.catalog .catalog-item h4 {
+  font-size: 14px;
+  margin-bottom: 14px;
+}
+
+.catalog .catalog-item p {
+  width: 200px;
+  height: 60px;
+  font-size: 12px;
+}
+
+.catalog .catalog-item .oldPrice {
+  font-size: 12px;
+}
+
+.catalog .catalog-item .price {
+  margin: 7px 0;
+  font-weight: 600;
+}
+
+.catalog .catalog-item .installments {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.catalog .catalog-item .btn {
+  width: 200px;
+  height: 30px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.catalog .btn {
+  width: 260px;
+  height: 40px;
+  margin: 0 auto 0 auto;
+  display: block;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 /*# sourceMappingURL=style.css.map */

@@ -11,6 +11,8 @@
 }
 
 body{
+    width: 1500px;
+    height: 2444px;
     font-family: 'Helvetica Neue', 'Regular';
 }
 
@@ -33,13 +35,10 @@ body{
     margin-bottom: 7px;
 }
 
-label{
-    
-}
 /* ----- HEADER ------ */
 
 .header{
-    width: 1449.5px;
+    width: fit-content;
     height: 399.03px;
     text-align: center;
     background-color: var(--main-bg-color);
@@ -125,11 +124,13 @@ label{
 /* ----- CATALOG ------ */
 
 .catalog{
+    color: var(--main-text-color);
+    margin: 0 291px 0 286px;
     
     .text-divider{
         font-size: 18px;
         font-weight: 400;
-        color: var(--main-text-color);
+        margin-bottom: 50px;
         display: flex;
         align-items: center;
     }
@@ -140,7 +141,6 @@ label{
         height: 1px;
         background-color: var(--main-text-color);
         flex-grow: 1;
-        margin: 0 290px;
     }
 
     .text-divider::before {
@@ -149,5 +149,73 @@ label{
       
     .text-divider::after {
         margin-left: 20px;
+    }
+
+    .catalog-grid{
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 40px;
+        row-gap: 40px;
+        height: 740px;
+        width: 931px;
+        margin-bottom: 52px;
+    }
+
+
+    .catalog-item{
+        width: fit-content;
+        height: fit-content;
+        
+        .display-item{
+            margin-bottom: 14px;
+            border: 1px solid var(--border-color);
+            width: 200px;
+            height: 150px;
+            
+            img{
+                display: block;
+                height: 100%;
+                width: 100%;
+            }
+        }
+
+        h4{
+            font-size: 14px;
+            margin-bottom: 14px;
+        }
+
+        p{
+            width: 200px;
+            height: 60px;
+            font-size: 12px;
+        }
+
+        .oldPrice{
+            font-size: 12px;
+        }
+        
+        .price{
+            margin: 7px 0;
+            font-weight: 600;
+        }
+
+        .installments{
+            font-size: 12px;
+            margin-bottom: 10px;
+        }
+
+        .btn{
+            width: 200px;
+            height: 30px;
+            box-shadow: none;
+        }
+    }
+
+    .btn{
+        width: 260px;
+        height: 40px;
+        margin: 0 auto 0 auto;
+        display: block;
+        box-shadow: none;
     }
 }
