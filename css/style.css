@@ -79,6 +79,7 @@ body {
   display: flex;
   -ms-flex-line-pack: center;
       align-content: center;
+  margin-bottom: 79px;
 }
 
 .about article {
@@ -129,5 +130,37 @@ body {
 
 .about #registerUser .selector {
   margin-right: 40px;
+}
+
+/* ----- CATALOG ------ */
+.catalog .text-divider {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--main-text-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.catalog .text-divider::before,
+.catalog .text-divider::after {
+  content: '';
+  height: 1px;
+  background-color: var(--main-text-color);
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin: 0 290px;
+}
+
+.catalog .text-divider::before {
+  margin-right: 20px;
+}
+
+.catalog .text-divider::after {
+  margin-left: 20px;
 }
 /*# sourceMappingURL=style.css.map */
