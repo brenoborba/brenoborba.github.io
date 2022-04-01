@@ -270,8 +270,27 @@ body {
 }
 
 .newsletter #registerNewsletter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-top: 40px;
-  display: inline-block;
+  height: 145px;
+  width: 725px;
+}
+
+.newsletter #registerNewsletter div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .newsletter #registerNewsletter label {
@@ -281,5 +300,7 @@ body {
 .newsletter #registerNewsletter .btn {
   -webkit-box-shadow: none;
           box-shadow: none;
+  display: block;
+  margin: 0 auto;
 }
 /*# sourceMappingURL=style.css.map */

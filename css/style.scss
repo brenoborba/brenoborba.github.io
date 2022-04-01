@@ -247,9 +247,17 @@ body{
     }
 
     #registerNewsletter{
-        margin-top: 40px;
-        display: inline-block;
 
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 40px;
+        height: 145px;
+        width: 725px;
+        div{
+            display: flex;
+            flex-direction: column;
+        }
 
         label{
             font-size: 12px;
@@ -257,6 +265,8 @@ body{
 
         .btn{
             box-shadow: none;
+            display: block;
+            margin: 0 auto;
         }
     }
 }
