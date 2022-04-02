@@ -44,6 +44,10 @@ body{
     margin-left: 20px;
 }
 
+.input-text.inputError{
+    border: 2px solid red;
+}
+
 
 
 .btn{
@@ -62,7 +66,6 @@ body{
     width: 340px;
     height: 30px;
     border: 1px solid var(--border-color); 
-    margin-bottom: 7px;
 }
 
 /* ----- HEADER ------ */
@@ -136,8 +139,9 @@ body{
             margin-bottom: 7px;
         }
 
-        input{
-            margin-bottom: 20px;
+        span{
+            font-size: 14px;
+            color: #e74c3c;
         }
 
         .btn{
@@ -283,7 +287,6 @@ body{
     background-color: var(--main-bg-color);
     position: absolute;
     clip-path: polygon(0% 30%, 100% 0%, 100% 100%, 0% 100%);
-    
 
     p{
         text-align: center;

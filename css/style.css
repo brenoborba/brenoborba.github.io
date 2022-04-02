@@ -53,6 +53,10 @@ body {
   margin-left: 20px;
 }
 
+.input-text.inputError {
+  border: 2px solid red;
+}
+
 .btn {
   width: 160px;
   height: 40px;
@@ -70,7 +74,6 @@ body {
   width: 340px;
   height: 30px;
   border: 1px solid var(--border-color);
-  margin-bottom: 7px;
 }
 
 /* ----- HEADER ------ */
@@ -159,8 +162,9 @@ body {
   margin-bottom: 7px;
 }
 
-.about #registerUser input {
-  margin-bottom: 20px;
+.about #registerUser span {
+  font-size: 14px;
+  color: #e74c3c;
 }
 
 .about #registerUser .btn {

@@ -48,31 +48,34 @@
         </p>
       </article>
 
-      <form action="recordData.html" method="get" id="registerUser">
+      <form action="recordData.html" method="GET" id="registerUser">
         <div>
           <label> Seu nome: </label>
-          <input type="text" name="nome" class="input-text" />
-          <span class="erro"></span>
+          <input type="text" name="name" class="input-text"/>
+          <span class="error"></span>
         </div>
 
         <div>
           <label>E-mail:</label>
-          <input type="email" name="email" class="input-text" />
-          <span class="erro"></span>
+          <input type="email" name="email" class="input-text"/>
+          <span class="error"></span>
         </div>
 
         <div>
           <label>CPF:</label>
-          <input type="text" name="cpf" class="input-text" />
-          <span class="erro"></span>
+          <input type="text" name="cpf" class="input-text"/>
+          <span class="error"></span>
         </div>
 
         <div>
-          <input name="sexo" type="radio" value="masculino" />
+          <input name="sexo" type="radio" value="masculino"/>
           <label class="selector">Masculino</label>
-          <input name="sexo" type="radio" value="feminino" />
+          <input name="sexo" type="radio" value="feminino"/>
           <label class="selector">Feminino</label>
+          <br>
+          <span class="radioError"></span>
         </div>
+
 
         <button class="btn" type="submit" id="submitRegistering">Enviar</button>
       </form>
@@ -249,7 +252,7 @@
 
     <footer class="footer">
 
-        <p>Testando suas habilidades em HTML, CSS e JS. Linx Impulse 2019</p>
+        <p>Testando suas habilidades em HTML, CSS e JS. Linx Impulse 2019@</p>
 
     </footer>
 
