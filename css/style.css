@@ -199,9 +199,7 @@ body {
 }
 
 .catalog .catalog-item {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  width: 200px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -214,18 +212,18 @@ body {
   height: 150px;
 }
 
-.catalog .catalog-item .display-item img {
+.catalog .catalog-item .display-item .displayImg {
   display: block;
   height: 100%;
   width: 100%;
 }
 
-.catalog .catalog-item h4 {
+.catalog .catalog-item .productName {
   font-size: 14px;
   margin-bottom: 14px;
 }
 
-.catalog .catalog-item p {
+.catalog .catalog-item .productDescription {
   width: 200px;
   height: 60px;
   font-size: 12px;

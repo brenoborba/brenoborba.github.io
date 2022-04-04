@@ -179,7 +179,7 @@ body{
 
 
     .catalog-item{
-        width: fit-content;
+        width: 200px;
         height: fit-content;
         
         .display-item{
@@ -188,19 +188,19 @@ body{
             width: 200px;
             height: 150px;
             
-            img{
+            .displayImg{
                 display: block;
                 height: 100%;
                 width: 100%;
             }
         }
 
-        h4{
+        .productName{
             font-size: 14px;
             margin-bottom: 14px;
         }
 
-        p{
+        .productDescription{
             width: 200px;
             height: 60px;
             font-size: 12px;
