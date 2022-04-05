@@ -1,4 +1,19 @@
 const registerUserForm = document.getElementById("registerUser")
+const registerNewsletter = document.getElementById("registerNewsletter")
+
+function inputValidation(input, string) {
+    if(!input.value){
+        errorFlag = true
+        input.classList.add('inputError')
+        let span = input.nextSibling.nextSibling
+        span.innerText = `Insira o ${string} corretamente!`
+    } else{
+        input.classList.remove('inputError')
+        let span = input.nextSibling.nextSibling
+        span.innerText = ''
+    }
+}
+
 
 /* First form validation */
 registerUserForm.onsubmit = e =>{
@@ -8,18 +23,6 @@ registerUserForm.onsubmit = e =>{
     const nameInput = document.forms['registerUser']['name']
     const emailInput = document.forms['registerUser']['email']
     const cpfInput = document.forms['registerUser']['cpf']
-    function inputValidation(input, string) {
-        if(!input.value){
-            errorFlag = true
-            input.classList.add('inputError')
-            let span = input.nextSibling.nextSibling
-            span.innerText = `Insira o ${string} corretamente!`
-        } else{
-            input.classList.remove('inputError')
-            let span = input.nextSibling.nextSibling
-            span.innerText = ''
-        }
-    }
     
     inputValidation(nameInput, 'nome')
     inputValidation(emailInput, 'e-mail')
@@ -53,18 +56,31 @@ registerUserForm.onsubmit = e =>{
     
 }
 
+/* Newsletter form validation */
+registerNewsletter.onsubmit = e =>{
+    e.preventDefault()
+    let errorFlag = false
+
+    const nameInput = document.forms['registerNewsletter']['name']
+    const emailInput = document.forms['registerNewsletter']['email']
+
+    inputValidation(nameInput, 'nome')
+    inputValidation(emailInput, 'e-mail')
+
+    if(!errorFlag){
+        registerNewsletter.submit()
+    }
+
+
+}
+
+
 const showMoreBtn = document.getElementById('showMoreBtn')
-const apiurl = 'https://frontend-intern-challenge-api.iurykrieger.vercel.app/products?page=1'
 const catalogGrid = document.querySelector('.catalog-grid')
 const catalog = document.querySelector('.catalog')
-let page = 1
 
-
-showProducts()
-
-async function showProducts(page) {
-
-   await fetch(`https://frontend-intern-challenge-api.iurykrieger.vercel.app/products?page=${1}`)
+async function showProducts() {
+   await fetch(`https://frontend-intern-challenge-api.iurykrieger.vercel.app/products?page=1`)
    .then(res => res.json())
    .then(data => data.products.forEach((product) => {
         const productWrapper = document.createElement('div')
@@ -88,8 +104,11 @@ async function showProducts(page) {
         </div>`
 
         catalogGrid.appendChild(productWrapper)
-   }))
+
+    }))
 }
+
+showProducts()
 
 
 

@@ -304,6 +304,11 @@ body {
   font-size: 12px;
 }
 
+.newsletter #registerNewsletter span {
+  font-size: 14px;
+  color: #e74c3c;
+}
+
 .newsletter #registerNewsletter .btn {
   -webkit-box-shadow: none;
           box-shadow: none;
