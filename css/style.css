@@ -250,19 +250,20 @@ body {
           box-shadow: none;
 }
 
-.catalog .btn {
+.catalog #showMoreBtn.btn {
   width: 260px;
   height: 40px;
   margin: 0 auto 0 auto;
   display: block;
   -webkit-box-shadow: none;
           box-shadow: none;
+  margin-bottom: 138px;
 }
 
 /* ----- NEWSLETTER ------ */
 .newsletter {
   color: var(--main-text-color);
-  padding-top: 138px;
+  /* padding-top: 138px; */
 }
 
 .newsletter .newsletter-divider {

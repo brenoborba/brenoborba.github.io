@@ -74,16 +74,18 @@ registerNewsletter.onsubmit = e =>{
 
 }
 
-
+/* API request for displaying the catalog */
 const showMoreBtn = document.getElementById('showMoreBtn')
 const catalogGrid = document.querySelector('.catalog-grid')
-const catalog = document.querySelector('.catalog')
+const secondPage = document.getElementById('secondPage')
+secondPage.style.display = 'none'
 
-async function showProducts() {
-   await fetch(`https://frontend-intern-challenge-api.iurykrieger.vercel.app/products?page=1`)
+async function showProducts(page) {
+    let productWrapper
+   await fetch(`https://frontend-intern-challenge-api.iurykrieger.vercel.app/products?page=${page}`)
    .then(res => res.json())
    .then(data => data.products.forEach((product) => {
-        const productWrapper = document.createElement('div')
+        productWrapper = document.createElement('div')
 
         productWrapper.innerHTML += 
         `<div class="catalog-item">
@@ -105,10 +107,20 @@ async function showProducts() {
 
         catalogGrid.appendChild(productWrapper)
 
+        
     }))
+
+    showMoreBtn.onclick = function(){
+        showProducts(2)
+        secondPage.style.display = ''
+    }
 }
 
+
 showProducts()
+
+
+
 
 
 

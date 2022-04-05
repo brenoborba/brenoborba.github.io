@@ -227,12 +227,13 @@ body{
         }
     }
 
-    .btn{
+    #showMoreBtn.btn {
         width: 260px;
         height: 40px;
         margin: 0 auto 0 auto;
         display: block;
         box-shadow: none;
+        margin-bottom: 138px;
     }
 }
 
@@ -240,7 +241,7 @@ body{
 
 .newsletter{
     color: var(--main-text-color);
-    padding-top: 138px;
+    /* padding-top: 138px; */
 
     .newsletter-divider{
         @extend .text-divider;
