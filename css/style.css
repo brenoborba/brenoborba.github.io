@@ -78,9 +78,7 @@ body {
 
 /* ----- HEADER ------ */
 .header {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  width: inherit;
   height: 399.03px;
   text-align: center;
   background-color: var(--main-bg-color);
@@ -91,17 +89,16 @@ body {
 
 .header span {
   display: inline-block;
-  margin: 69px 637.5px 0 635px;
+  margin-top: 69px;
   font-size: 20px;
 }
 
 .header h1 {
   font-size: 40px;
-  margin: 0 570.5px 0 571px;
 }
 
 .header p {
-  margin: 24px 475.5px 0 476px;
+  margin-top: 24px;
   font-size: 14px;
 }
 
