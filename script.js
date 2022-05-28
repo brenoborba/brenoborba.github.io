@@ -113,6 +113,8 @@ async function showProducts(page) {
     showMoreBtn.onclick = function(){
         showProducts(2)
         secondPage.style.display = ''
+
+
     }
 }
 

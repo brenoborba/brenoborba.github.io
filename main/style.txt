@@ -301,6 +301,4 @@ body{
         color: white;
         margin: 157.24px 620px 86px 620px;
     }
-
-
 }

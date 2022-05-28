@@ -1,333 +1,234 @@
 :root {
-  --main-bg-color: #707070;
-  --main-text-color: #888888;
-  --border-color: #00000029;
+    --color-primary: #FFFFFF;
+    --color-secondary: #707070;
+    --color-tertiary: #888888;
+    --color-quaternary: #D6D6D6;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
 }
 
-body {
-  width: 1500px;
-  height: 2444px;
-  font-family: 'Helvetica Neue', 'Regular';
+body{
+    font-family: 'Helvetica Neue', sans-serif;
+    width: 1499.5px;
+    height: 2444px;
 }
 
-/* ----- GLOBAL STYLES ------ */
-.text-divider, .catalog .catalog-divider, .newsletter .newsletter-divider {
-  font-size: 18px;
-  font-weight: 400;
-  margin-bottom: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+/* --------- HEADER ---------- */
+
+.header{
+    text-align: center;
+    color: white;
+    padding-top: 69px;
+    background-color: var(--color-secondary);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 65%);
+    height: 400px;
 }
 
-.text-divider::before, .catalog .catalog-divider::before, .newsletter .newsletter-divider::before,
-.text-divider::after,
-.catalog .catalog-divider::after,
-.newsletter .newsletter-divider::after {
-  content: '';
-  height: 1px;
-  background-color: var(--main-text-color);
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+.header span{
+    /* color: #FFFFFF; */
+    display: inline-block;
+    font-size: 20px;
 }
 
-.text-divider::before, .catalog .catalog-divider::before, .newsletter .newsletter-divider::before {
-  margin-right: 20px;
+.header h1{
+    /* color: #FFFFFF; */
+    font-size: 40px;
 }
 
 
-.text-divider::after,
-.catalog .catalog-divider::after,
-.newsletter .newsletter-divider::after {
-  margin-left: 20px;
+.header p{
+    /* color: #FFFFFF; */
+    font-size: 14px;
+    margin-top: 24px;
 }
 
-.input-text.inputError {
-  border: 2px solid red;
+.header nav{
+    color: var(--color-tertiary);
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 769px;
 }
 
-.btn {
-  width: 160px;
-  height: 40px;
-  font-size: 14px;
-  background-color: white;
-  color: var(--main-text-color);
-  -webkit-box-shadow: 0px 1px 6px #00000029;
-          box-shadow: 0px 1px 6px #00000029;
-  border: 1px solid #707070;
-  border-radius: 4px;
-  cursor: pointer;
+.btn{
+    width: 160px;
+    height: 40px;
+    font-size: 14px;
+    background-color: white;
+    color: var(--main-text-color);
+    border: 1px solid #707070;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
-.input-text {
-  width: 340px;
-  height: 30px;
-  border: 1px solid var(--border-color);
+.header nav .btn{
+    box-shadow: 0px 1px 6px #00000029;
 }
 
-/* ----- HEADER ------ */
-.header {
-  width: inherit;
-  height: 399.03px;
-  text-align: center;
-  background-color: var(--main-bg-color);
-  color: white;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 65%);
-          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 65%);
+/* --------- ABOUT ---------- */
+
+.about{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    padding: 0 290px;
 }
 
-.header span {
-  display: inline-block;
-  margin-top: 69px;
-  font-size: 20px;
+.about article{
+    color: var(--color-secondary);
+    padding-right: 60px;
+
 }
 
-.header h1 {
-  font-size: 40px;
+.about article h2{
+    font-size: 20px;
 }
 
-.header p {
-  margin-top: 24px;
-  font-size: 14px;
+.about article p{
+    font-size: 12px;
 }
 
-.header nav {
-  margin: 50px 368.5px 0 371px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+.about form{
+    text-align: left;
+    color: var(--color-secondary);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 290px;
+    width: fit-content;
 }
 
-/* ----- ABOUT ------ */
-.about {
-  color: var(--main-text-color);
-  padding-top: 20.97px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  margin-bottom: 79px;
+.input-text{
+    width: 340px;
+    height: 30px;
+    border: 1px solid var(--color-secondary); 
 }
 
-.about article {
-  margin: 0px 60px 95px 290px;
-  text-align: left;
+
+/* --------- CATALOG ---------- */
+.catalog{
+    padding: 80px 291px 0 286px;
+}
+.text-divider{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    color: #707070;
 }
 
-.about article h2 {
-  font-size: 20px;
-  font-weight: 400;
-  margin-bottom: 20px;
+.text-divider::before,
+.text-divider::after{
+    content: '';
+    height: 1px;
+    background-color: var(--color-secondary);
+    flex-grow: 1;
 }
 
-.about article p {
-  font-size: 12px;
-  line-height: 18px;
+.text-divider::before {
+    margin-right: 20px;
+  }
+  
+.text-divider::after {
+    margin-left: 20px;
 }
 
-.about #registerUser {
-  margin-right: 290px;
-  height: 290px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+.catalog .catalog-grid{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 40px;
+    column-gap: 40px;
 }
 
-.about #registerUser label {
-  margin-bottom: 7px;
+.catalog .catalog-grid .catalog-item{
+    width: 200px;
+    height: fit-content;
+    color: #707070;
 }
 
-.about #registerUser span {
-  font-size: 14px;
-  color: #e74c3c;
+.catalog .catalog-grid .catalog-item .display-item{
+    width: auto;
+    height: 150px;
+    border: 1px solid var(--color-secondary);
 }
 
-.about #registerUser .btn {
-  margin-top: 3px;
-  width: 340px;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+.catalog #showMoreBtn{
+    color: var(--color-secondary);
+    height: 39px;
+    width: 260px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 52px;
+    cursor: pointer;
 }
 
-.about #registerUser .selector {
-  margin-right: 40px;
+/* --------- NEWSLETTER ---------- */
+
+.newsletter{
+    padding: 139px 290px 71.76px 290px;
 }
 
-/* ----- CATALOG ------ */
-.catalog {
-  color: var(--main-text-color);
-  margin: 0 291px 0 286px;
+.newsletter p{
+    text-align: center;
+    font-size: 14px;
+    color: var(--color-secondary);
 }
 
-.catalog .catalog-grid {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-column-gap: 40px;
-          column-gap: 40px;
-  row-gap: 40px;
-  height: 740px;
-  width: 931px;
-  margin-bottom: 52px;
+.newsletter form{
+    margin: 0 100px;
+    margin-top: 40px;
+    height: 145px;
+    width: 725px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-.catalog .catalog-item {
-  width: 200px;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+.newsletter form div{
+    display: flex;
+    flex-direction: column;
 }
 
-.catalog .catalog-item .display-item {
-  margin-bottom: 14px;
-  border: 1px solid var(--border-color);
-  width: 200px;
-  height: 150px;
+.newsletter form div label{
+    font-size: 12px;
+    color: var(--color-secondary);
 }
 
-.catalog .catalog-item .display-item .displayImg {
-  display: block;
-  height: 100%;
-  width: 100%;
+.newsletter form #submitNews{
+    width: 260px;
+    height: 39px;
+    display: block;
+    margin: 0 auto;
+    color: var(--color-secondary);
 }
 
-.catalog .catalog-item .productName {
-  font-size: 14px;
-  margin-bottom: 14px;
+
+
+
+.footer{
+    height: 293.24px;
+    width: inherit;
+    background-color: var(--color-secondary);
+    position: absolute;
+    clip-path: polygon(0% 30%, 100% 0%, 100% 100%, 0% 100%);
 }
 
-.catalog .catalog-item .productDescription {
-  width: 200px;
-  height: 60px;
-  font-size: 12px;
+.footer p{
+    text-align: center;
+    font-size: 12px;
+    color: white;
+    margin: 157.24px 620px 86px 620px;
 }
 
-.catalog .catalog-item .oldPrice {
-  font-size: 12px;
-}
 
-.catalog .catalog-item .price {
-  margin: 7px 0;
-  font-weight: 600;
-}
 
-.catalog .catalog-item .installments {
-  font-size: 12px;
-  margin-bottom: 10px;
-}
 
-.catalog .catalog-item .btn {
-  width: 200px;
-  height: 30px;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
 
-.catalog #showMoreBtn.btn {
-  width: 260px;
-  height: 40px;
-  margin: 0 auto 0 auto;
-  display: block;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  margin-bottom: 138px;
-}
 
-/* ----- NEWSLETTER ------ */
-.newsletter {
-  color: var(--main-text-color);
-  /* padding-top: 138px; */
-}
 
-.newsletter .newsletter-divider {
-  padding: 0 290px;
-}
-
-.newsletter p {
-  text-align: center;
-  font-size: 14px;
-  margin-top: 44px;
-}
-
-.newsletter #registerNewsletter {
-  margin: 0 390px 71.76px 390px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-top: 40px;
-  height: 145px;
-  width: 725px;
-}
-
-.newsletter #registerNewsletter div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.newsletter #registerNewsletter label {
-  font-size: 12px;
-}
-
-.newsletter #registerNewsletter span {
-  font-size: 14px;
-  color: #e74c3c;
-}
-
-.newsletter #registerNewsletter .btn {
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  display: block;
-  margin: 0 auto;
-}
-
-/* ----- FOOTER ------ */
-.footer {
-  height: 293.24px;
-  width: inherit;
-  background-color: var(--main-bg-color);
-  position: absolute;
-  -webkit-clip-path: polygon(0% 30%, 100% 0%, 100% 100%, 0% 100%);
-          clip-path: polygon(0% 30%, 100% 0%, 100% 100%, 0% 100%);
-}
-
-.footer p {
-  text-align: center;
-  font-size: 12px;
-  color: white;
-  margin: 157.24px 620px 86px 620px;
-}
-/*# sourceMappingURL=style.css.map */
