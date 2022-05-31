@@ -7,6 +7,7 @@
     <title>Linx</title>
 
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css">
   </head>
   <body>
     <header class="header">
@@ -49,25 +50,25 @@
       </article>
 
       <form action="recordData.html" method="GET" id="registerUser">
-        <div>
-          <label> Seu nome: </label>
+        <div class="input-container">
+          <label>Seu nome:</label>
           <input type="text" name="name" class="input-text"/>
           <span class="error"></span>
         </div>
 
-        <div>
+        <div class="input-container">
           <label>E-mail:</label>
           <input type="email" name="email" class="input-text"/>
           <span class="error"></span>
         </div>
 
-        <div>
+        <div class="input-container">
           <label>CPF:</label>
           <input type="text" name="cpf" class="input-text"/>
           <span class="error"></span>
         </div>
 
-        <div>
+        <div class="gender-selector">
           <input name="sexo" type="radio" value="masculino"/>
           <label class="selector">Masculino</label>
           <input name="sexo" type="radio" value="feminino"/>
@@ -126,6 +127,7 @@
     </footer>
 
 
-    <script src="script.js"></script>
+    <script src="/js/script.js"></script>
+    <script src="/js/form_validation.js"></script>
   </body>
 </html>

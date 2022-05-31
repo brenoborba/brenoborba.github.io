@@ -28,15 +28,16 @@ body{
     height: 400px;
 }
 
+
 .header span{
     /* color: #FFFFFF; */
     display: inline-block;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .header h1{
     /* color: #FFFFFF; */
-    font-size: 40px;
+    font-size: 36px;
 }
 
 
@@ -87,24 +88,52 @@ body{
 
 .about article h2{
     font-size: 20px;
+    font-weight: 400;
 }
 
 .about article p{
     font-size: 12px;
+    color: var(--color-tertiary);
 }
 
 .about form{
     text-align: left;
-    color: var(--color-secondary);
+    color: var(--color-tertiary);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 290px;
+    font-size: 12px;
     width: fit-content;
 }
 
+.about form .input-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.about form .gender-selector{
+    display: inline-block;
+    justify-content: space-between;
+
+}
+
+.error{
+    color: red;
+}
+
+.about form .gender-selector .radioError{
+    color: red;
+}
+
+
+
+.about form button{
+    width: 100%;
+
+}
 .input-text{
-    width: 340px;
+    width: 385px;
     height: 30px;
     border: 1px solid var(--color-secondary); 
 }
@@ -148,16 +177,48 @@ body{
 
 .catalog .catalog-grid .catalog-item{
     width: 200px;
-    height: fit-content;
+    height: 350px;
     color: #707070;
 }
-
 .catalog .catalog-grid .catalog-item .display-item{
-    width: auto;
+    width: 100%;
     height: 150px;
     border: 1px solid var(--color-secondary);
+    margin-bottom: 14px;
 }
 
+.catalog .catalog-grid .catalog-item .product-info{
+    margin-top: 14px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+.catalog .catalog-grid .catalog-item .product-info .productName{
+    font-size: 14px;
+}
+
+.catalog .catalog-grid .catalog-item .product-info .productDescription{
+    font-size: 12px;
+    font-weight: 200;
+}
+
+.catalog .catalog-grid .catalog-item .product-info .oldPrice{
+    font-size: 12px;
+}
+
+.catalog .catalog-grid .catalog-item .product-info .price{
+    font-size: 16px;
+}
+
+.catalog .catalog-grid .catalog-item .product-info .installments{
+    font-size: 12px;
+}
+
+.catalog .catalog-grid .catalog-item .product-info .btn{
+    width: 100%;
+}
 .catalog #showMoreBtn{
     color: var(--color-secondary);
     height: 39px;
@@ -200,13 +261,24 @@ body{
     color: var(--color-secondary);
 }
 
+.newsletter form div input{
+    width: 340px;
+    height: 30px;
+}
+
+.newsletter form div .error{
+    color: red;
+    font-size: 12px;
+}
+
 .newsletter form #submitNews{
     width: 260px;
     height: 39px;
+    color: var(--color-secondary);
     display: block;
     margin: 0 auto;
-    color: var(--color-secondary);
 }
+
 
 
 
@@ -225,6 +297,9 @@ body{
     color: white;
     margin: 157.24px 620px 86px 620px;
 }
+
+
+
 
 
 

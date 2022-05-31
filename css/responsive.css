@@ -1,0 +1,111 @@
+@media (max-width: 720px) {
+    body{
+        width: 420px;
+        height: 2521px;
+    }
+
+    /* --------- HEADER ---------- */
+
+    .header{
+        width: 100%;
+        height: 397.89px;
+        text-align: left;
+    }
+
+    .header span{
+        margin: 66px 177px 0 16px;
+    }
+
+    .header h1{
+        margin: 0 46px 9px 16px;
+    }
+
+    .header p{
+        margin: 9px 45px 0 16px;
+
+    }
+
+    .header nav{
+        width: 345px;
+        height: 111px;
+        margin-top: 56px;
+        margin-left: 16px;
+        margin: 56px 37px 0 37px;
+        flex-wrap: wrap;
+    }
+
+    /* --------- ABOUT ---------- */
+
+    .about{
+        padding: 29px 18px 0 18px;
+        flex-direction: column;
+    }
+
+    .about article{
+        padding: 0;   
+        margin-bottom: 30px;
+    }
+
+    .about form{
+        width: 100%;
+    }
+
+    .about form 
+
+    .about form button{
+        width: 100%;
+    }
+
+    /* --------- CATALOG ---------- */
+    .catalog{
+        width: 420px;
+        padding: 0;
+        padding-top: 100px;
+        
+    }
+
+    .catalog .text-divider{
+        text-align: center;
+        margin: 0;
+    }
+
+    .catalog .catalog-grid{
+        width: 403px;
+        height: 621px;
+        margin-top: 23px;
+        padding: 0px 18px 0 10px;
+    }
+
+    .catalog .catalog-grid .catalog-item{
+        width: 392px;
+        height: 129px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .catalog .catalog-grid .catalog-item .display-item{
+        width: 169px;
+        height: 129px;
+    }
+
+    .catalog .catalog-grid .catalog-item .product-info{
+        height: 129px;
+        width: 200px;
+        margin: 0;
+    }
+
+    .catalog .catalog-grid .catalog-item .product-info .productDescription{
+        display: none;
+    }
+
+
+
+
+
+
+
+
+
+
+
+}
