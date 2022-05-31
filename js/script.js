@@ -2,8 +2,8 @@
 const showMoreBtn = document.getElementById('showMoreBtn')
 const catalogGrid = document.querySelector('.catalog-grid')
 const secondPage = document.getElementById('secondPage')
-const mobileLayout = window.matchMedia("(max-width: 720px)")
 secondPage.style.display = 'none'
+let page = 1
 
 async function showProducts(page) {
     let productWrapper
@@ -39,13 +39,13 @@ async function showProducts(page) {
     }))
 
 
-    showMoreBtn.onclick = function(){
-        showProducts(2)
-        secondPage.style.display = ''
-        showMoreBtn.style.display = 'none'
-    }
+}
+window.onload = showProducts()
 
+showMoreBtn.onclick = function(){
+    page++
+    showProducts(page)
+    secondPage.style.display = ''
 }
 
-showProducts(1)
 

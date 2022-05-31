@@ -103,10 +103,8 @@ registerNewsletter.onsubmit = e =>{
         span.innerText = ''
     }
     
-
     if(!errorFlag){
         registerNewsletter.submit()
     }
-
 
 }
