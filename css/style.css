@@ -13,8 +13,9 @@
 
 body{
     font-family: 'Helvetica Neue', sans-serif;
-    width: 1499.5px;
+    max-width: 1499.5px;
     height: 2444px;
+    margin: auto;
 }
 
 /* --------- HEADER ---------- */
